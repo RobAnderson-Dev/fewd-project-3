@@ -1,0 +1,17 @@
+/* ~~~~~~~~~~ NORMALIZE USER-AGENT STYLING ~~~~~~~~~~ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+a {
+    text-decoration: none;
+}
+/* ~~~~~~~~~~ MAIN STYLING ~~~~~~~~~~ */
+body {
+    font-family: 'Merriweather', serif;
+}
