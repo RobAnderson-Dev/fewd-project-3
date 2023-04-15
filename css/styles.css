@@ -1,12 +1,13 @@
 /* ~~~~~~~~~~ NORMALIZE USER-AGENT STYLING ~~~~~~~~~~ */
 * {
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 ul {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
 }
 a {
     text-decoration: none;
@@ -14,4 +15,18 @@ a {
 /* ~~~~~~~~~~ MAIN STYLING ~~~~~~~~~~ */
 body {
     font-family: 'Merriweather', serif;
+}
+
+button {
+    display: block;
+}
+
+
+
+/* ~~~~~~~~~~ MEDIA QUERIES ~~~~~~~~~~ */
+
+@media (min-width: 760px) {
+
+
+
 }
