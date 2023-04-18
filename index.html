@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,38 +18,38 @@
                 <h2>Sign up for our newsletter</h2>
                 <p>Get the latest news on how your code is doing right in your inbox</p>
             </section>
-            <form action="" method="post">
+            <form action="http://www.fakeurl.com/fake.htm" method="post">
                 <fieldset class="contact-fields">
                     <h2>Contact Information</h2>
                     <ul>
-                        <li>
+                        <li class="contact">
                             <label for="name" class="textbox-label">Full Name</label>
                             <input type="text" id="name" name="user_name" placeholder="Required" required>
                         </li>
-                        <li>
+                        <li class="contact">
                             <label for="email" class="textbox-label">Email Address</label>
                             <input type="email" id="email" name="user_email" placeholder="Required" required>
                         </li>
-                        <li>
+                        <li class="contact">
                             <label for="phone" class="textbox-label">Phone Number</label>
-                            <input type="tel" id="phone" name="user_phone">
+                            <input type="tel" id="phone" name="user_phone" placeholder="555-321-2000">
                         </li>
-                        <li>
+                        <li class="contact">
                             <label for="address" class="textbox-label">Street Address</label>
-                            <input type="text" id="address" name="user_address">
+                            <input type="text" id="address" name="user_address" placeholder="2000 Whytwokay Blvd">
                         </li>
-                        <li>
+                        <li class="contact">
                             <label for="city" class="textbox-label">City</label>
-                            <input type="text" id="city" name="user_city">
+                            <input type="text" id="city" name="user_city" placeholder="Millenium City">
                         </li>
-                        <li>
+                        <li class="contact">
                             <label for="state" class="textbox-label">State</label>
                             <select id="state" name="user_state">
                                 <!-- BEGIN CITATION -->
                                 <!-- state and territory <option> lists source https://www.freeformatter.com/usa-state-list-html-select.html -->
                                 <!-- Date accessed: 15Apr2023 -->
-                                <optgroup>
-                                    <option value="">Choose State</option>
+                                <option value="">Choose State</option>
+                                <optgroup label="U.S. States">
                                     <option value="AL">Alabama</option>
                                     <option value="AK">Alaska</option>
                                     <option value="AZ">Arizona</option>
@@ -101,7 +102,7 @@
                                     <option value="WI">Wisconsin</option>
                                     <option value="WY">Wyoming</option>
                                 </optgroup>
-                                <optgroup>
+                                <optgroup label="U.S. Major Territories">
                                     <option value="AS">American Samoa</option>
                                     <option value="GU">Guam</option>
                                     <option value="MP">Northern Mariana Islands</option>
@@ -112,9 +113,9 @@
                                 <!-- END CITATION -->
                             </select>
                         </li>
-                        <li>
+                        <li class="contact" id="zip_container">
                             <label for="zip" class="textbox-label">Zip Code</label>
-                            <input type="text" id="zip" name="user_zip">
+                            <input type="text" id="zip" name="user_zip" placeholder="12345">
                         </li>
                     </ul>
                 </fieldset>
@@ -122,32 +123,32 @@
                     <h2>Newsletter</h2>
                     <p>Select the newsletters you would like to receive</p>
                     <ul>
-                        <li>
+                        <li class="newsletter">
                             <input type="checkbox" id="html_news" name="newsletters" value="html_news">
                             <label for="html_news">HTML News</label>
-                        <li>
-                        <li>
+                        </li>
+                        <li class="newsletter">
                             <input type="checkbox" id="css_news" name="newsletters" value="css_news">
                             <label for="css_news">CSS News</label>
-                        <li>
-                        <li>
+                        </li>
+                        <li class="newsletter">
                             <input type="checkbox" id="js_news" name="newsletters" value="js_news">
                             <label for="js_news">Javascript News</label>
-                        <li>
+                        </li>
                     </ul>
                     <p>Newsletter format</p>
                     <ul>
-                        <li>
+                        <li class="newsletter">
                             <input type="radio" id="html_format" name="newsletter_format" value="html_format">
                             <label for="html_format">HTML</label>
-                        <li>
-                        <li>
+                        </li>
+                        <li class="newsletter">
                             <input type="radio" id="plaintext_format" name="newsletter_format" value="plaintext_format">
                             <label for="plaintext_format">Plain text</label>
-                        <li>
+                        </li>
                     </ul>
                     <label for="other_topics" class="textbox-label">Other topics you'd like to hear about</label>
-                    <textarea id="other_topics" rows="6"></textarea>
+                    <textarea id="other_topics" name="user_topics" rows="6" placeholder="e.g. smart contracts, distributed computing"></textarea>
                     <button type="submit">Sign Up</button>
                 </fieldset>
             </form>
